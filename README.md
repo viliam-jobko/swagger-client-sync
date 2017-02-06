@@ -4,7 +4,7 @@ This is a simple wrapper that allows you to create swagger-client synchronously.
 ## Examples
 
 ### Quick start
-If you pass just URL, `usePromises` will be added to options automatically.
+If you pass just URL, `usePromise` will be added to options automatically.
 ```javascript
 const petstoreApiClient = require('swagger-client-sync')('http://petstore.swagger.io/v2/swagger.json');
 
