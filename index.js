@@ -44,13 +44,3 @@ function returnClient(options, ignoreCache) {
 
 
 module.exports = returnClient;
-
-
-const petstoreApiClientOptions = {
-  url: 'http://petstore.swagger.io/v2/swagger.json',
-  usePromise: true
-};
-const petstoreApiClient = returnClient(petstoreApiClientOptions);
-
-petstoreApiClient.pet.getPetById({ petId: 7 })
-  .then(pet => console.log(pet));
